@@ -1,12 +1,16 @@
 // MENU BAR
 .bar {
-    background-color: rgb(194, 223, 91);
+    // background-color: rgb(194, 223, 91);
     margin-left: 4rem;
     display: flex;
     align-items: center;
+    visibility: hidden;
     &__icon-bar {
         height: 3.5rem;
         width: 3.5rem;
+    }
+    @media screen and (max-width: 550px) {
+        visibility: visible;
     }
 }
 
@@ -18,7 +22,7 @@
 
 // SEARCH
 .search {
-    background-color: rgb(226, 125, 43);
+    flex: 0 0 60%;
     display: flex;
     align-items: center;
     // justify-content: center;
@@ -30,12 +34,12 @@
         color: inherit;
         padding: .7rem 2rem;
         border-radius: 100px;
-        width: 75%;
+        width: 30%;
         transition: all .2;
         margin-right: -3.5rem;
         &:focus {
             outline: none;
-            width: 100%;
+            width: 50%;
             background-color: var(--color-grey-light-3);
         }
         &::-webkit-input-placeholder {
@@ -65,7 +69,6 @@
 
 // USER 
 .user {
-    // background-color: rgb(226, 43, 43);
     color: var(--color-primary-blue);
     margin-right: 6rem;
     &>* {

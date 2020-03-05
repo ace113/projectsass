@@ -1,0 +1,101 @@
+// navigation
+// .main-nav {
+//     ul {
+//         list-style: none;
+//         display: flex;
+//         position: relative;
+//         &:first-child {
+//             margin-left: 6rem;
+//         }
+//         ul {
+//             display: none;
+//             li {
+//                 transition: all 1s ease-in;
+//                 top: 0;
+//             }
+//         }
+//         li:hover ul> {
+//             display: flex;
+//             flex-direction: column;
+//             position: absolute;
+//             top: 100%;
+//             left: 0;
+//         }
+//     }
+//     a {
+//         height: 3rem;
+//         background-color: var(--color-primary-blue);
+//         color: #fff;
+//         font-size: 1.4rem;
+//         font-weight: normal;
+//         text-decoration: none;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         width: 180px;
+//         transition: all ease .5s;
+//         &:hover {
+//             cursor: pointer;
+//             background-color: var(--color-primary-orange);
+//         }
+//     }
+// }
+.main-nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: #003366;
+    height: 30px;
+    font-size: 1.4rem;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.main-nav a:hover {
+    background-color: var(--color-primary-orange);
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.main-nav ul li {
+    position: relative;
+    width: 100%;
+}
+
+.navigation li:hover .dropdown li {
+    top: 0;
+    display: block;
+}
+
+.dropdown li {
+    display: none;
+    position: relative;
+}
+
+.dropdown {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.dropdown ul li:hover .dropdown2 ul li {
+    display: block;
+}
+
+.dropdown2 ul li {
+    display: none;
+}
+
+.dropdown ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+}

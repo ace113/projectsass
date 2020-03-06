@@ -11,16 +11,17 @@
     }
     @media screen and (max-width: 550px) {
         visibility: visible;
+        margin-left: 1rem;
     }
 }
 
 // LOGO
 .logo {
     background-color: rgb(194, 223, 91);
-    height: 3.5rem;
+    height: 2.5rem;
     margin-left: -3.5rem;
     @media screen and (max-width: 550px) {
-        margin-left: 0;
+        margin: 0 auto;
     }
 }
 
@@ -30,6 +31,11 @@
     display: flex;
     align-items: center;
     // justify-content: center;
+    @media screen and (max-width: 550px) {
+        // margin-left: 5rem;
+        display: none;
+        order: 1;
+    }
     &__input {
         font-family: inherit;
         font-size: inherit;
@@ -75,6 +81,9 @@
 .user {
     color: var(--color-primary-blue);
     margin-right: 6rem;
+    @media screen and (max-width: 550px) {
+        margin-right: 0;
+    }
     &>* {
         font-size: 1.4rem;
         text-decoration: none;
@@ -85,9 +94,9 @@
             cursor: pointer;
         }
     }
-    span {
-        margin: 0 5px;
-    }
+    // span {
+    //     margin: 0 5px;
+    // }
 }
 
 // courses__row-1
@@ -154,10 +163,25 @@
 // content-left
 .content-left {
     margin-right: 8rem;
-    font-size: 5.5rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #fff;
+    // font-size: 5.5rem;
+    // font-weight: 700;
+    // text-transform: uppercase;
+    // background-color: red;
+    text-align: right;
+    &__logo {
+        width: 60%;
+    }
+    &__address {
+        font-size: 1.2rem;
+        font-weight: normal;
+        color: #fff;
+        // text-align: ;
+    }
+    // .footer-logo-box {
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: right;
+    // }
 }
 
 // footer-lower

@@ -4,101 +4,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/3f25a0abc0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="upper-nav">
-                <div class="bar">
-                    <svg class="bar__icon-bar">
+    <div class="header">
+        <div class="upper-nav">
+            <div class="bar">
+                <svg class="bar__icon-bar">
                         <use xlink:href="img/sprite.svg#icon-menu"></use>
                     </svg>
-                </div>
-                <img src="img/logo.png" alt="Logo" class="logo">
-                <form action="" method="post" class="search">
-                    <input type="text" class="search__input">
-                    <button type="submit" class="search__button">
+            </div>
+            <img src="img/logo.png" alt="Logo" class="logo">
+            <form action="" method="post" class="search">
+                <input type="text" class="search__input">
+                <button type="submit" class="search__button">
                         <svg class="search__icon-search">
                             <use xlink:href="img/sprite.svg#icon-search"></use>
                         </svg>
                     </button>
-                </form>
-                <div class="user">
-                    <a href="#" class="user__login-btn">Log In</a>
-                    <!-- <span>|</span> -->
-                    <a href="#" class="user__register-btn">Register</a>
-                </div>
-            </div>
-            <div class="main-nav">
-                <ul class="navigation">
-                    <li class="navigation__item">
-                        <a href="#" class="link">Study Materials</a>
-                        <ul class="dropdown">
-                            <li class="dropdown__item">
-                                <a href="#" class="link">aaaa</a>
-                            </li>
-                            <li class="dropdown__item">
-                                <a href="#" class="link">Classes</a>
-                            </li>
-                            <li class="dropdown__item">
-                                <a href="#" class="link">Buy a Course</a>
-                                <ul class="dropdown2">
-                                    <li class="dropdown__item">
-                                        <a href="#" class="link">aaaa</a>
-                                    </li>
-                                    <li class="dropdown__item">
-                                        <a href="#" class="link">Classes</a>
-                                    </li>
-                                    <li class="dropdown__item">
-                                        <a href="#" class="link">Buy a Course</a>
-                                    </li>
-                                    <li class="dropdown__item">
-                                        <a href="#" class="link">Free Counselling</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown__item">
-                                <a href="#" class="link">Free Counselling</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#" class="link">Classes</a>
-                        <ul class="dropdown">
-                            <li class="dropdown__item">
-                                <a href="#" class="link">bbb</a>
-                            </li>
-                            <li class="dropdown__item">
-                                <a href="#" class="link">Classes</a>
-                            </li>
-                            <li class="dropdown__item">
-                                <a href="#" class="link">Buy a Course</a>
-                            </li>
-                            <li class="dropdown__item">
-                                <a href="#" class="link">Free Counselling</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#" class="link">Buy a Course</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#" class="link">Free Counselling</a>
-                    </li>
-                </ul>
+            </form>
+            <div class="user">
+                <a href="#" class="user__login-btn">Log In</a>
+                <!-- <span>|</span> -->
+                <a href="#" class="user__register-btn">Register</a>
             </div>
         </div>
-        <main class="main">
-            <!-- section 1 -->
-            <section class="banner">
-                <img src="img/banner.jpg" alt="" class="banner__image">
-            </section>
-            <!-- section 2 -->
-            <section class="courses">
+        <nav class="active">
+            <ul class="navigation">
+                <li class="navigation__item">
+                    <a href="#" class="link">Study Materials</a>
+                    <ul class="dropdown">
+                        <li class="dropdown__item">
+                            <a href="#" class="link">aaaa</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a href="#" class="link">Classes</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a href="#" class="link">Buy a Course</a>
+                            <ul class="dropdown2">
+                                <li class="dropdown__item">
+                                    <a href="#" class="link">aaaa</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="#" class="link">Classes</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="#" class="link">Buy a Course</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="#" class="link">Free Counselling</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown__item">
+                            <a href="#" class="link">Free Counselling</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="link">Classes</a>
+                    <ul class="dropdown">
+                        <li class="dropdown__item">
+                            <a href="#" class="link">bbb</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a href="#" class="link">Classes</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a href="#" class="link">Buy a Course</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a href="#" class="link">Free Counselling</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="link">Buy a Course</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="link">Free Counselling</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <main class="main">
+        <!-- section 1 -->
+        <section class="banner">
+            <img src="img/banner.jpg" alt="" class="banner__image">
+        </section>
+        <!-- section 2 -->
+        <!-- <section class="courses">
                 <div class="courses__row-1">
                     <div class="card">
                         <div class="card__content">
@@ -153,83 +154,103 @@
                     sec2
                 </div>
                 <div class="courses__row-3">sec 3</div>
-            </section>
-            <!-- section 3 -->
-            <section class="">
+            </section> -->
+        <!-- section 3 -->
+        <section class="">
 
-            </section>
-            <!-- footer -->
-            <footer class="footer">
-                <div class="footer-upper">
-                    <div class="content-right">
-                        <div class="col-1-of-3">
-                            <ul>
-                                <li><a href="#">site map</a></li>
-                                <li><a href="#">Study Materials</a></li>
-                                <li><a href="#">Classes</a></li>
-                                <li><a href="#">Buy a Course</a></li>
-                                <li><a href="#">Free Councelling</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-1-of-3">
-                            <ul>
-                                <li><a href="#">site map</a></li>
-                                <li><a href="#">site map</a></li>
-                                <li><a href="#">site map</a></li>
-                                <li><a href="#">site map</a></li>
-                                <li><a href="#">site map</a></li>
-                                <li><a href="#">site map</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-1-of-3">
-                            <ul>
-                                <li><a href="#">site map</a></li>
-                                <li><a href="#">site map</a></li>
-                                <li><a href="#">site map</a></li>
-                                <li><a href="#">site map</a></li>
-                                <li><a href="#">site map</a></li>
-                                <li><a href="#">site map</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-1-of-3">
-                            <ul>
-                                <li><a href="#">site map</a></li>
-                                <li><a href="#">site map</a></li>
-                                <li><a href="#">site map</a></li>
-                                <li><a href="#">site map</a></li>
-                                <li><a href="#">site map</a></li>
-                                <li><a href="#">site map</a></li>
-                            </ul>
-                        </div>
+        </section>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer-upper">
+                <div class="content-right">
+                    <div class="col-1-of-3">
+                        <ul>
+                            <li><a href="#">site map</a></li>
+                            <li><a href="#">Study Materials</a></li>
+                            <li><a href="#">Classes</a></li>
+                            <li><a href="#">Buy a Course</a></li>
+                            <li><a href="#">Free Councelling</a></li>
+                        </ul>
                     </div>
-                    <div class="content-left">
-                        Logo
+                    <div class="col-1-of-3">
+                        <ul>
+                            <li><a href="#">site map</a></li>
+                            <li><a href="#">site map</a></li>
+                            <li><a href="#">site map</a></li>
+                            <li><a href="#">site map</a></li>
+                            <li><a href="#">site map</a></li>
+                            <li><a href="#">site map</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-1-of-3">
+                        <ul>
+                            <li><a href="#">site map</a></li>
+                            <li><a href="#">site map</a></li>
+                            <li><a href="#">site map</a></li>
+                            <li><a href="#">site map</a></li>
+                            <li><a href="#">site map</a></li>
+                            <li><a href="#">site map</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-1-of-3">
+                        <ul>
+                            <li><a href="#">site map</a></li>
+                            <li><a href="#">site map</a></li>
+                            <li><a href="#">site map</a></li>
+                            <li><a href="#">site map</a></li>
+                            <li><a href="#">site map</a></li>
+                            <li><a href="#">site map</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="footer-lower">
-                    <div class="footer-lower__legal">
-                        &copy; 2020, all rights are reserved by Company.
+                <div class="content-left">
+                    <div class="footer-logo-box">
+                        <img src="img/logo.png" alt="Logo" class="content-left__logo">
+                        <!-- <div class="content-left__address">
+                                <ul>
+                                    <li><i class="fas fa-map-marker-alt"></i>&nbsp; &nbsp;Kumaripati, Lalitpur, Nepal</li>
+                                    <li><i class="fas fa-map-marker-alt"></i>&nbsp; &nbsp;Kumaripati, Lalitpur, Nepal</li>
+                                    <li><i class="fas fa-map-marker-alt"></i>&nbsp; &nbsp;Kumaripati, Lalitpur, Nepal</li>
+                                    <li><i class="fas fa-map-marker-alt"></i>&nbsp; &nbsp;Kumaripati, Lalitpur, Nepal</li>
+                                </ul>
+                            </div> -->
                     </div>
-                    <div class="footer-lower__social-box">
-                        <div class="social">
-                            <span>Follow Us</span>
+                </div>
 
-                            <svg class="social__icon">
+            </div>
+            <div class="footer-lower">
+                <div class="footer-lower__legal">
+                    &copy; 2020, all rights are reserved by Company.
+                </div>
+                <div class="footer-lower__social-box">
+                    <div class="social">
+                        <span>Follow Us</span>
+
+                        <svg class="social__icon">
                                 <use xlink:href="img/sprite.svg#icon-facebook-square"></use>
                             </svg>
-                            <svg class="social__icon">
+                        <svg class="social__icon">
                                 <use xlink:href="img/sprite.svg#icon-google-plus-square"></use>
                             </svg>
-                            <svg class="social__icon">
+                        <svg class="social__icon">
                                 <use xlink:href="img/sprite.svg#icon-linkedin-square"></use>
                             </svg>
 
-                        </div>
                     </div>
                 </div>
-            </footer>
-        </main>
-    </div>
+            </div>
+        </footer>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $('.bar').click(function() {
+                $('nav').toggleClass('active');
+            })
+        })
+    </script>
 </body>
 
 </html>
